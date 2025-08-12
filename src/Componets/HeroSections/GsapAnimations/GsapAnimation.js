@@ -78,6 +78,9 @@ const closeAniLeftBox = (element) => {
   });
 };
 
+
+
+
 // Reload Aimations from Navigator
 const nameTlAni = (element) => {
   if (!element?.current) return;
@@ -112,7 +115,7 @@ const RoleBgAni = (element) => {
   const roleBg = element.current.querySelector(".leftSideCircle");
   const role = element.current.querySelectorAll(".name");
   
-  console.log(role);
+ 
 
   if (!roleBg) return;
 
@@ -135,8 +138,62 @@ tl.fromTo(role, {
 
 
 
-
 };
+
+
+
+
+
+// name Animation from profile 
+
+const roleAndNameAni = (element, delay = 0) => {
+  return new Promise((resolve) => {
+    if (!element?.current) return resolve();
+
+    gsap.fromTo(
+      element.current,
+      { y: -100, opacity: 0 },
+      {
+        y: 0,
+        opacity: 1,
+        duration: 1.5,
+        ease: "power2.out",
+        delay: delay, // ✅ delay added here
+        onComplete: resolve,
+      }
+    );
+  });
+};
+
+
+
+
+
+
+const FristBg = (element, delay = 0) => {
+  return new Promise((resolve) => {
+    if (!element?.current) return resolve();
+
+    gsap.fromTo(
+      element.current,
+      {  opacity: 0 },
+      {
+        
+        opacity: 1,
+        duration: 1.5,
+        ease: "power2.out",
+        delay: delay, // ✅ delay added here
+        onComplete: resolve,
+      }
+    );
+  });
+};
+
+
+
+
+
+
 
 
 
@@ -156,4 +213,6 @@ export {
   closeAniRigthBox,
   nameTlAni,
   RoleBgAni,
+  roleAndNameAni,
+  FristBg,
 };

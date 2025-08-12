@@ -18,8 +18,6 @@ import Profile from "../Profile/Profile";
 
 // NOTE :- Hare md: means 1100px For Some desing Reason not md:768px.
 
-
-
 function HeroSection() {
   const [ShowNav, setShowNav] = useState(false);
   const [darkMode, setDarkMode] = useState(false);
@@ -89,7 +87,7 @@ useEffect(() => {
 
 
   return (
-    <header className="w-full h-screen text-black dark:text-white p-0">
+    <header className="w-full h-screen text-black dark:text-white dark:bg-gray-950 p-0">
       <GsapAnimation.Provider value={leftCircle}>
         <section className="navBarContainer flex items-center justify-center mt-2 ">
           <nav className="navBarBox relative flex justify-between h-full w-[90%] items-center    ">
@@ -112,7 +110,7 @@ useEffect(() => {
 } */}
 
 <div className="darkMoodBox " onClick={()=>setDarkMode(!darkMode)} >
-{darkMode ? <FaRegSun className=" text-[20px]  cursor-pointer " title="Dark Mood"/> : <FaSun className=" text-[20px] cursor-pointer "  title="Light Mood" />}
+{darkMode ? <FaRegSun className=" text-[20px]  cursor-pointer md:mr-5 " title="Dark Mood"/> : <FaSun className=" text-[20px] cursor-pointer md:mr-5 "  title="Light Mood" />}
 </div>
               
 
@@ -144,7 +142,7 @@ useEffect(() => {
                 className="w-full h-full flex flex-col justify-center items-center gap-10 z-10  border-solid text-[18px] md:flex-row md:border-none"
                 ref={listContainer}
               >
-                <li>
+                <li className="  " >
                   <a href="/">Home</a>
                 </li>
                 <li>
@@ -166,7 +164,7 @@ useEffect(() => {
 
               <div
                 ref={rightCircle}
-                className="w-[400px] h-[350px] rounded-full fixed bottom-[-20%] right-[-45%] bg-black md:hidden"
+                className="w-[400px] h-[350px] rounded-full fixed bottom-[-20%] right-[-45%] bg-black md:hidden  "
               ></div>
             </div>
           </nav>
