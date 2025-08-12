@@ -4,6 +4,22 @@
   height: 350px;
 }
 
+
+
+
+@media screen and (max-width:480px) {
+  
+  .swiper {
+  width: 290px;
+  height: 350px;
+}
+}
+
+
+
+
+
+
 .swiper-slide {
   display: flex;
   align-items: center;
@@ -13,6 +29,20 @@
   font-weight: bold;
   color: #fff;
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 .swiper-slide:nth-child(1n) {
     box-shadow: 0px 0px 10px 5px rgb(40, 40, 134);

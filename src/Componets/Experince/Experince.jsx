@@ -8,14 +8,14 @@ export default function Experience() {
   // Scroll progress track karna
   const { scrollYProgress } = useScroll({
     target: sectionRef,
-    offset: ["start end", "end start"] // Scroll ka start aur end define
+    offset: ["start end ", "end start"] // Scroll ka start aur end define
   });
 
   // Scroll ko translateX me map karna
   const x = useTransform(scrollYProgress, [0, 1], ["0%", "-100%"]);
 
   return (
-    <section className=" bg-transparent w-screen md:h-[900vh] h-[950vh] uppercase " 
+    <section className=" bg-transparent w-screen md:h-[900vh] lg:h-[900vh] h-[100vh]  uppercase " 
       ref={sectionRef}
       style={{
         padding: "50px",
@@ -30,7 +30,7 @@ export default function Experience() {
           fontWeight: "bold",
           padding: "20px"
         }}
-        className=" md:text-[580px] text-[28vh] "
+        className=" md:text-[420px]  text-[75px] "
       >
         
        Ex<span className=" text-yellow-400 " >p</span>eri<span className=" text-yellow-400 " >e</span>nc<span className=" text-yellow-400 " >e</span>
