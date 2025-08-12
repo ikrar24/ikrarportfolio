@@ -1,8 +1,8 @@
 import React from "react";
-import Capture from "../../assets/Capture.png";
-import Capture2 from "../../assets/Capture2.png";
-import Capture3 from "../../assets/Capture3.png";
-import Capture4 from "../../assets/Capture4.png";
+import Capture from "../../assets/Capture.PNG";
+import Capture2 from "../../assets/Capture2.PNG";
+import Capture3 from "../../assets/Capture3.PNG";
+import Capture4 from "../../assets/Capture4.PNG";
 import { Swiper, SwiperSlide } from 'swiper/react';
 import { EffectCards } from 'swiper/modules';
 import 'swiper/css';
