@@ -18,7 +18,19 @@ app.use(express.json());
 const  PORT = 5000|| process.env.PORT
 
 
+
+
+
 // Route
+
+
+app.get("/", (req , res)=>{
+    res.send(" Hello From Contect Api Test ")
+})
+
+
+
+
 app.post("/send-email", async (req, res) => {
     const { name, email, message } = req.body;
 

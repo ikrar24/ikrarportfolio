@@ -20,7 +20,7 @@ function Contect() {
     setStatus("Sending...");
 
     try {
-      const res = await fetch("http://localhost:5000/send-email", { // backend ka URL
+      const res = await fetch("https://ikrarportfolio-backend.onrender.com/send-email", { // backend ka URL
         method: "POST",
         headers: { "Content-Type": "application/json" },
         body: JSON.stringify({
