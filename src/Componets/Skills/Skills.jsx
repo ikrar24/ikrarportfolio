@@ -36,7 +36,7 @@ const skils = [
 function Skills() {
   return (
     <div className=" flex items-center justify-center w-full " >
-    <section className="w-[75%]  h-[70vh] md:h-[80vh] mt-10">
+    <section className="w-[90%] md:w-[75%]  h-[70vh] md:h-[80vh] mt-10">
 
 
  <h2 className=" flex items-center justify-center text-5xl font-bold uppercase text-yellow-400 mb-10 " >

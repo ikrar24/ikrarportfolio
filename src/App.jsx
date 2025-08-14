@@ -9,13 +9,17 @@ import Test from './Componets/Test/Test'
 import { Route, Router , Routes } from "react-router-dom"
 import ScrollTest from "./Componets/ScrollTest"
 import Skills from './Componets/Skills/Skills'
+import Contect from './Componets/Contect/Contect'
+import Footer from './Footer/Footer'
 function App() {
 
   
   return (
    <>
 
- 
+{/* app-wrapper for css issue fixing */}
+
+ <div className="app-wrapper" >
 
 <Routes>
 
@@ -29,14 +33,15 @@ function App() {
 <ExContent/>
 <Projects/>
 <ProjectsContents/>
-  
+<Contect/>
+  <Footer/>
   </>} />
 
 
 
   <Route path="/scroll" element={<ScrollTest/>} />
 </Routes>
-
+</div>
 
 
 
