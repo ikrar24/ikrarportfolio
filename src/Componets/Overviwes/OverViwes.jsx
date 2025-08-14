@@ -4,7 +4,7 @@ import barsh from "../../assets/barsh.jpg"
 function OverViwes() {
   return (
     <>
-         <section className=" mt-16 flex items-center justify-center flex-col w-full relative " >
+         <section id="about" className=" mt-16 flex items-center justify-center flex-col w-full relative " >
 
 <div className=" items-center justify-center flex flex-col w-[80%] " >
 

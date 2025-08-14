@@ -36,7 +36,7 @@ function ProjectsContents() {
   };
 
   return (
-    <section className="flex items-center justify-center w-full ">
+    <section id="project" className="flex items-center justify-center w-full ">
       <div className="w-[100%]  md:w-[90%] items-center justify-center p-2 flex gap-16 flex-wrap">
         <Swiper
           effect={"cards"}

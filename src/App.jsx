@@ -11,6 +11,8 @@ import ScrollTest from "./Componets/ScrollTest"
 import Skills from './Componets/Skills/Skills'
 import Contect from './Componets/Contect/Contect'
 import Footer from './Footer/Footer'
+
+
 function App() {
 
   
@@ -19,7 +21,10 @@ function App() {
 
 {/* app-wrapper for css issue fixing */}
 
+
  <div className="app-wrapper" >
+
+
 
 <Routes>
 
@@ -37,12 +42,11 @@ function App() {
   <Footer/>
   </>} />
 
-
-
   <Route path="/scroll" element={<ScrollTest/>} />
 </Routes>
-</div>
 
+
+</div>
 
 
    </>

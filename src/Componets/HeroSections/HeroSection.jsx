@@ -2,6 +2,7 @@ import React, { useState, useEffect, useRef } from "react";
 import { RxCross1 } from "react-icons/rx";
 import { FaBars, FaRegSun, FaSun } from "react-icons/fa";
 import GsapAnimation from "../../ContextApi/Context";
+import { Link } from "react-scroll";
 import {
   closeAniLeftBox,
   closeAniRigthBox,
@@ -20,7 +21,7 @@ import Profile from "../Profile/Profile";
 
 function HeroSection() {
   const [ShowNav, setShowNav] = useState(false);
-  const [darkMode, setDarkMode] = useState(false);
+  const [darkMode, setDarkMode] = useState(true);
   const leftCircle = useRef(null);
   const rightCircle = useRef(null);
   const listContainer = useRef(null);
@@ -143,17 +144,27 @@ useEffect(() => {
                 ref={listContainer}
               >
                 <li className="  " >
-                  <a href="/">Home</a>
+                  <a href="/" >Home</a>
                 </li>
+
+
                 <li>
-                  <a href="/">About</a>
+
+                  <Link to="about" smooth={true} duration={500} offset={-50} style={{cursor:"pointer"}} onClick={ ()=>{ setShowNav(false) } } >About</Link>
+
                 </li>
+
+
                 <li>
-                  <a href="/">Project</a>
+                    <Link to="project" smooth={true} duration={500} offset={-50} style={{cursor:"pointer"}} onClick={ ()=>{ setShowNav(false) } } >Project</Link>
                 </li>
+
                 <li>
-                  <a href="/">Contact</a>
+
+                    <Link to="contect" smooth={true} duration={500} offset={-50} style={{cursor:"pointer"}} onClick={ ()=>{ setShowNav(false) } } >Contect</Link>
+
                 </li>
+
               </ul>
 
               {/* Background circles (mobile only) */}
