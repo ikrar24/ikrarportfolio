@@ -119,7 +119,7 @@ useEffect(() => {
               src={ProfileImage}
               alt="mypicture"
               className=" max-h-full absolute bottom-[-5%] max-w-full object-cover block z-10"
-              loading="lazy"
+              loading="eager"
             />
 
             {/* w-full md:w-[450px] object-cover z-10 absolute bottom-0 border-2 border-solid border-black h-full block */}
