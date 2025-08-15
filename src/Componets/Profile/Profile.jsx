@@ -1,6 +1,7 @@
 import React, {useRef, useEffect} from "react";
 import { FristBg, roleAndNameAni, RoleBgAni } from "../HeroSections/GsapAnimations/GsapAnimation";
 import gsap from "gsap";
+import { Link } from "react-scroll";
 function Profile() {
   const roleBg = useRef(null) ; 
   const role = useRef(null) ; 
@@ -102,7 +103,7 @@ useEffect(() => {
                 {" "}
                 <button className=" absolute top-[25%]  left-[15%] bg-white text-gray-700  p-5 pt-2 pb-2 rounded-md font-bold  ">
                   {" "}
-                  Contect Now{" "}
+                    <Link to="contect" smooth={true} duration={500} offset={-50} style={{cursor:"pointer"}} >Contect</Link>
                 </button>{" "}
               </div>
             </div>
