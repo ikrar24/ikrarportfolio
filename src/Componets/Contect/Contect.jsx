@@ -121,12 +121,19 @@ function Contect() {
             </label>
           </div>
 
-          <button
-            type="submit"
-            className=" p-2 bg-black text-white shadow-2xl shadow-blue-700 pl-5 pr-5 rounded-md "
-          >
-            Submit
-          </button>
+<button
+  type="button"
+  className="relative hover:text-black overflow-hidden px-5 py-2 rounded-md bg-black text-white shadow-2xl shadow-blue-700
+             before:content-[''] before:absolute before:inset-0 before:text-black before:bg-yellow-400
+             before:scale-x-0 before:origin-left before:transition-transform before:duration-300
+             hover:before:scale-x-100"
+>
+  <span className="relative  z-10">Submit</span>
+</button>
+
+
+
+
 
           {/* Status Message */}
           {status && <p className="text-sm mt-2">{status}</p>}

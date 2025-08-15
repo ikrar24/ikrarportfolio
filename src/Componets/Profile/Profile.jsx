@@ -1,5 +1,6 @@
 import React, {useRef, useEffect} from "react";
 import { FristBg, roleAndNameAni, RoleBgAni } from "../HeroSections/GsapAnimations/GsapAnimation";
+import ProfileImage from "../../assets/ProfileImage.png"
 import gsap from "gsap";
 import { Link } from "react-scroll";
 function Profile() {
@@ -111,7 +112,11 @@ useEffect(() => {
 
           <figure className="myPicturesImg overflow-hidden h-[75vh] md:h-[100%] w-full md:w-[50%] flex justify-center items-center rounded relative " ref={myprofileBg} >
             <img
-              src="https://i.postimg.cc/qRbKBKkX/Chat-GPT-Image-Jul-1-2025-11-03-30-PM.png"
+
+
+// https://i.postimg.cc/qRbKBKkX/Chat-GPT-Image-Jul-1-2025-11-03-30-PM.png
+
+              src={ProfileImage}
               alt="mypicture"
               className=" max-h-full absolute bottom-[-5%] max-w-full object-cover block z-10"
               loading="lazy"
