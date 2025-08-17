@@ -122,7 +122,7 @@ function Contect() {
           </div>
 
 <button
-  type="button"
+  type="submit"
   className="relative hover:text-black overflow-hidden px-5 py-2 rounded-md bg-black text-white shadow-2xl shadow-blue-700
              before:content-[''] before:absolute before:inset-0 before:text-black before:bg-yellow-400
              before:scale-x-0 before:origin-left before:transition-transform before:duration-300
