@@ -25,7 +25,7 @@ const  PORT = 5000|| process.env.PORT
 
 
 app.get("/", (req , res)=>{
-    res.send(" Hello From Contect Api Test ")
+      res.status(200).send("OK");
 })
 
 
