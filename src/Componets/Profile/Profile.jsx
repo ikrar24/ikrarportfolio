@@ -116,8 +116,7 @@ useEffect(() => {
 
 // https://i.postimg.cc/qRbKBKkX/Chat-GPT-Image-Jul-1-2025-11-03-30-PM.png
 
-              src="https://res.cloudinary.com/dq2hmndgb/image/upload/v1756468296/bf720e2cd640a55_file_00000000dcbc6246b09508459e8495a7_wm_wdiiy5.png"
-              alt="mypicture"
+              src="https://res.cloudinary.com/dq2hmndgb/image/upload/v1756468760/bf720e2cd640a55_file_00000000dcbc6246b09508459e8495a7_wm_wdiiy5-removebg-preview_nkpslp.png"
               className=" max-h-full absolute bottom-[-5%] max-w-full object-cover block z-10"
               loading="eager"
             />
